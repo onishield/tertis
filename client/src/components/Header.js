@@ -18,7 +18,7 @@ class Header extends Component {
                 return (
                     <React.Fragment>
                         <li>
-                            <a href="#" className="waves-effect waves-light btn-large" style={{padding: "0 0.5rem", margin: "0 0"}}><img src={this.props.auth.image} alt="" className="circle responsive-img" style={{maxHeight: "48px", verticalAlign: "middle", marginRight: ".5em"}}/>
+                            <a href="/" className="waves-effect waves-light btn-large" style={{padding: "0 0.5rem", margin: "0 0"}}><img src={this.props.auth.image} alt="" className="circle responsive-img" style={{maxHeight: "48px", verticalAlign: "middle", marginRight: ".5em"}}/>
                                 {this.props.auth.displayName}
                             </a>
                         </li>
