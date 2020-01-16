@@ -9,17 +9,21 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^3.0.0",
+    "concurrently": "^5.0.2",
     "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "mongoose": "^5.8.6",
     "nodemon": "^2.0.2",
     "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
     "passport-google-oauth20": "^2.0.0"
   }
 }
