@@ -7,6 +7,7 @@ const userSchema = new Schema({
     email: String,
     displayName: String,
     image: String,
+    credits: {type: Number, default: 0},
 });
 
 mongoose.model('users', userSchema);
